@@ -50,4 +50,4 @@ newColLabels <- sub("^","AverageOf",colLabels)
 names(dataSum) <- c("Subject", "Activity", newColLabels)
 
 # Write summary data set to file
-write.table(dataSum, file="AccelerometerDataSummary.txt")
+write.table(dataSum, file="AccelerometerDataSummary.txt", row.name = FALSE)
